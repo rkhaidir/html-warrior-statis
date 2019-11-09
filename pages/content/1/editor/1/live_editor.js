@@ -98,8 +98,8 @@ function setupEditor() {
 		enableLiveAutocompletion: true
 	});
 
-	editor.setShowPrintMargin(false);
-	editor.setBehavioursEnabled(false);
+	editor.setShowPrintMargin(true);
+	editor.setBehavioursEnabled(true);
 }
 
 setupEditor();

@@ -294,6 +294,11 @@ footer .detailAuthor {
     display: block;
 }
 
+.list-group a,
+.list-group button {
+    font-size: 10pt;
+}
+
 @media only screen and (max-width: 600px) {
     footer {
         margin-bottom: 9vh;
