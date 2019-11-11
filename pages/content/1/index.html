@@ -19,7 +19,7 @@
 
         iframe {
             width: 100%;
-            min-height: 65vh;
+            min-height: 40vh;
             border: 0;
             border: 8px solid #535353;
         }
@@ -71,9 +71,9 @@
                                 pada Halaman
                                 Web</button>
                             <div class="d-block" id="myDropdown">
-                                <a class="list-group-item list-group-item-primary" href="./../1/">
+                                <a class="list-group-item list-group-item-success" href="./../1/">
                                     <span class="pl-3">
-                                        Materi 1
+                                        Struktur Dasar HTML
                                     </span>
                                 </a>
                                 <a class="list-group-item list-group-item-secondary" href="./materi2.html">
@@ -82,9 +82,14 @@
                                     </span>
                                 </a>
                             </div>
-                            <button class="list-group-item list-group-item-action" data-toggle="collapse"
+                            <button class="list-group-item list-group-item-action disabled" data-toggle="collapsed"
                                 data-target="#myDropdown2" aria-controls="myDropdown2" aria-expanded="false"
-                                aria-label="Toggle navigation">Format Tabel pada Halaman Web</button>
+                                aria-label="Toggle navigation">
+                                Format Tabel pada Halaman Web
+                                <span class="ml-1" style="font-size: 1em;">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </button>
                             <div class="collapse" id="myDropdown2">
                                 <a class="list-group-item list-group-item-secondary" href="./../1/">
                                     <span class="pl-3">
@@ -97,9 +102,26 @@
                                     </span>
                                 </a>
                             </div>
-                            <a class="list-group-item list-group-item-action" href="./../3/">Format Multimedia pada
-                                Halaman
-                                Web</a>
+                            <button class="list-group-item list-group-item-action disabled" data-toggle="collapsed"
+                                data-target="#myDropdown3" aria-controls="myDropdown3" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                Format Multimedia pada Halaman Web
+                                <span class="ml-1" style="font-size: 1em;">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </button>
+                            <div class="collapse" id="myDropdown3">
+                                <a class="list-group-item list-group-item-secondary" href="./../1/">
+                                    <span class="pl-3">
+                                        Materi 1
+                                    </span>
+                                </a>
+                                <a class="list-group-item list-group-item-secondary" href="evaluasiA.html">
+                                    <span class="pl-3">
+                                        Materi 2
+                                    </span>
+                                </a>
+                            </div>
                             <!-- <a class="list-group-item list-group-item-action" href="./../4/">Materi 4</a> -->
                         </div>
                     </div>
@@ -148,9 +170,9 @@
                         pada Halaman
                         Web</button>
                     <div class="d-block" id="myDropdown">
-                        <a class="list-group-item list-group-item-primary" href="./../1/">
+                        <a class="list-group-item list-group-item-success" href="./../1/">
                             <span class="pl-3">
-                                Materi 1
+                                Struktur Dasar HTML
                             </span>
                         </a>
                         <a class="list-group-item list-group-item-secondary" href="./materi2.html">
@@ -159,9 +181,14 @@
                             </span>
                         </a>
                     </div>
-                    <button class="list-group-item list-group-item-action" data-toggle="collapse"
+                    <button class="list-group-item list-group-item-action disabled" data-toggle="collapsed"
                         data-target="#myDropdown2" aria-controls="myDropdown2" aria-expanded="false"
-                        aria-label="Toggle navigation">Format Tabel pada Halaman Web</button>
+                        aria-label="Toggle navigation">
+                        Format Tabel pada Halaman Web
+                        <span class="ml-1" style="font-size: 1em;">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </button>
                     <div class="collapse" id="myDropdown2">
                         <a class="list-group-item list-group-item-secondary" href="./../1/">
                             <span class="pl-3">
@@ -174,26 +201,107 @@
                             </span>
                         </a>
                     </div>
-                    <a class="list-group-item list-group-item-action" href="./../3/">Format Multimedia pada Halaman
-                        Web</a>
+                    <button class="list-group-item list-group-item-action disabled" data-toggle="collapsed"
+                        data-target="#myDropdown3" aria-controls="myDropdown3" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Format Multimedia pada Halaman Web
+                        <span class="ml-1" style="font-size: 1em;">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </button>
+                    <div class="collapse" id="myDropdown3">
+                        <a class="list-group-item list-group-item-secondary" href="./../1/">
+                            <span class="pl-3">
+                                Materi 1
+                            </span>
+                        </a>
+                        <a class="list-group-item list-group-item-secondary" href="evaluasiA.html">
+                            <span class="pl-3">
+                                Materi 2
+                            </span>
+                        </a>
+                    </div>
                     <!-- <a class="list-group-item list-group-item-action" href="./../4/">Materi 4</a> -->
                 </div>
             </div>
-            <div class="col-sm-9 card p-3">
-                <div class="tab-content">
-                    <div class="text-justify">
-                        <h3>Format Teks pada Halaman Web</h3>
+            <div class="col-sm-9">
+                <div class="tab-content card p-3">
+                    <div class="text-left">
+                        <h3>Struktur Dasar HTML</h3>
+                        <hr>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis id, accusantium nisi
-                            architecto minus maiores, delectus omnis atque vel aperiam, deserunt eos consequatur hic.
-                            Labore optio inventore excepturi cum eum.
+                            HTML adalah singkatan dari <strong>Hypertext Markup Language</strong>. HTML memungkinkan
+                            seorang pengguna untuk
+                            membuat dan menyusun bagian paragraf, heading, link atau tautan, tabel dan elemen lainnya
+                            untuk membuat
+                            halaman web dan aplikasi.
                         </p>
+                        <strong>Berikut adalah dokumen HTML sederhana:</strong>
                         <span class="blockquote-footer mb-2">Swipe Right to see the result</span>
                         <div onload="ready()" class="bungkus">
                             <iframe src="./editor/1/coba_view.html"></iframe>
                         </div>
                         <a href="./editor/1/" class="btn btn-dark">Mode Fullscreen</a>
+                        <br>
+                        <br>
+                        <blockquote>
+                            HTML bukanlah bahasa pemrograman, dengan begitu HTML tidak punya kemampuan untuk membuat
+                            fungsionalitas yang dinamis. Sebagai gantinya, HTML memungkinkan pengguna untuk
+                            mengorganisir dan memformat dokumen, sama seperti Microsoft Word.
+                        </blockquote>
+                        <p>
+                            Setiap halaman HTML minimal memiliki
+                            struktur dasar yang terdiri atas DTD atau DOCTYPE,
+                            tag html, tag head dan tag body:
+                        </p>
+                        <ul>
+                            <li class="has-line-data" data-line-start="0" data-line-end="3">
+                                <p class="has-line-data" data-line-start="0" data-line-end="2"><strong>DTD atau
+                                        DOCTYPE</strong><br>
+                                    Tag paling awal dari HTML adalah DTD atau DOCTYPE (<code>&lt;!DOCTYPE
+                                        html&gt;</code>). DTD adalah singkatan dari <em>Document Type Declaration</em>
+                                    yang berfungsi untuk memberitahu web browser bahwa dokumen yang akan diproses adalah
+                                    dokumen HTML5.</p>
+                            </li>
+                            <li class="has-line-data" data-line-start="3" data-line-end="6">
+                                <p class="has-line-data" data-line-start="3" data-line-end="5"><strong>Tag
+                                        <code>&lt;html&gt;</code></strong><br>
+                                    Tag <code>&lt;html&gt;</code> merupakan tag pembuka dari keseluruhan halaman web.
+                                    Semua kode html harus berada di dalam tag ini.</p>
+                            </li>
+                            <li class="has-line-data" data-line-start="6" data-line-end="9">
+                                <p class="has-line-data" data-line-start="6" data-line-end="8"><strong>Tag
+                                        <code>&lt;head&gt;</code></strong><br>
+                                    Elemen pada tag <code>&lt;head&gt;</code> umumnya berisi berbagai definisi halaman
+                                    seperti kode <em>CSS, Javascript, tag meta, viewport</em> dan kode-kode lainnya yang
+                                    tidak tampil di browser.</p>
+                            </li>
+                            <li class="has-line-data" data-line-start="9" data-line-end="12">
+                                <p class="has-line-data" data-line-start="9" data-line-end="11"><strong>Tag
+                                        <code>&lt;body&gt;</code></strong><br>
+                                    Tag ini berisi semua elemen yang akan tampil di halaman web seperti paragraf, tabel,
+                                    link, gambar, list dan masih banyak lagi. Sebagian besar waktu dalam merancang atau
+                                    mendesain web akan dihabiskan di dalam tag <code>&lt;body&gt;</code> ini.</p>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="prevNext my-2">
+                    <!-- <a href="./../1/" class="btn btn-outline-info disabled px-4">
+                        <span style="font-size: 1em;">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                        PREV
+                        <span class="ml-1" style="font-size: 1em;">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </a> -->
+                    <a href="./../1/materi2.html" class="btn btn-outline-info px-4 float-right">
+                        NEXT
+                        <span style="font-size: 1em;">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
