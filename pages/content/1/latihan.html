@@ -17,7 +17,21 @@
             overflow: hidden;
         }
 
-        iframe {
+        iframe#i2 {
+            width: 100%;
+            min-height: 20vh;
+            border: 0;
+            border: 8px solid #535353;
+        }
+
+        iframe#i3 {
+            width: 100%;
+            min-height: 40vh;
+            border: 0;
+            border: 8px solid #535353;
+        }
+
+        iframe#i4 {
             width: 100%;
             min-height: 40vh;
             border: 0;
@@ -41,8 +55,20 @@
             .blockquote-footer {
                 display: block;
             }
+
+            iframe {
+                min-height: 65vh;
+            }
         }
     </style>
+    <script>
+        window.onload = function awal() {
+            // document.getElementById("contoh1").hidden = true;
+            // document.getElementById("letak").hidden = true;
+            // document.getElementById("contoh2").hidden = true;
+            // document.getElementById("lanjut1").hidden = true;
+        };
+    </script>
 </head>
 
 <body>
@@ -71,7 +97,7 @@
                                 pada Halaman
                                 Web</button>
                             <div class="d-block" id="myDropdown">
-                                <a class="list-group-item list-group-item-success" href="./../1/">
+                                <a class="list-group-item list-group-item-secondary" href="./../1/">
                                     <span class="pl-3">
                                         Struktur Dasar HTML
                                     </span>
@@ -86,7 +112,7 @@
                                         Tag Syntax dan Option
                                     </span>
                                 </a>
-                                <a class="list-group-item list-group-item-secondary" href="./latihan.html">
+                                <a class="list-group-item list-group-item-success" href="./latihan.html">
                                     <span class="pl-3">
                                         Latihan
                                     </span>
@@ -186,7 +212,7 @@
                         pada Halaman
                         Web</button>
                     <div class="d-block" id="myDropdown">
-                        <a class="list-group-item list-group-item-success" href="./../1/">
+                        <a class="list-group-item list-group-item-secondary" href="./../1/">
                             <span class="pl-3">
                                 Struktur Dasar HTML
                             </span>
@@ -201,7 +227,7 @@
                                 Tag Syntax dan Option
                             </span>
                         </a>
-                        <a class="list-group-item list-group-item-secondary" href="./latihan.html">
+                        <a class="list-group-item list-group-item-success" href="./latihan.html">
                             <span class="pl-3">
                                 Latihan
                             </span>
@@ -259,87 +285,130 @@
             <div class="col-sm-9">
                 <div class="tab-content card p-3">
                     <div class="text-left">
-                        <h3>Struktur Dasar HTML</h3>
+                        <h3>Latihan</h3>
                         <hr>
                         <hr>
-                        <p>
-                            HTML adalah singkatan dari <strong>Hypertext Markup Language</strong>. HTML memungkinkan
-                            seorang pengguna untuk
-                            membuat dan menyusun bagian paragraf, heading, link atau tautan, tabel dan elemen lainnya
-                            untuk membuat
-                            halaman web dan aplikasi.
-                        </p>
-                        <strong>Berikut adalah dokumen HTML sederhana:</strong>
-                        <span class="blockquote-footer mb-2">Swipe Right to see the result</span>
-                        <div onload="ready()" class="bungkus">
-                            <iframe src="./editor/1/coba_view.html"></iframe>
-                        </div>
-                        <a href="./editor/1/" class="btn btn-dark">Mode Fullscreen</a>
-                        <br>
-                        <br>
-                        <blockquote>
-                            HTML bukanlah bahasa pemrograman, dengan begitu HTML tidak punya kemampuan untuk membuat
-                            fungsionalitas yang dinamis. Sebagai gantinya, HTML memungkinkan pengguna untuk
-                            mengorganisir dan memformat dokumen, sama seperti Microsoft Word.
-                        </blockquote>
-                        <p>
-                            Setiap halaman HTML minimal memiliki
-                            struktur dasar yang terdiri atas DTD atau DOCTYPE,
-                            tag html, tag head dan tag body:
-                        </p>
-                        <ul>
-                            <li class="has-line-data" data-line-start="0" data-line-end="3">
-                                <p class="has-line-data" data-line-start="0" data-line-end="2"><strong>DTD atau
-                                        DOCTYPE</strong><br>
-                                    Tag paling awal dari HTML adalah DTD atau DOCTYPE (<code>&lt;!DOCTYPE
-                                        html&gt;</code>). DTD adalah singkatan dari <em>Document Type Declaration</em>
-                                    yang berfungsi untuk memberitahu web browser bahwa dokumen yang akan diproses adalah
-                                    dokumen HTML5.</p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Latihan 1</a>
                             </li>
-                            <li class="has-line-data" data-line-start="3" data-line-end="6">
-                                <p class="has-line-data" data-line-start="3" data-line-end="5"><strong>Tag
-                                        <code>&lt;html&gt;</code></strong><br>
-                                    Tag <code>&lt;html&gt;</code> merupakan tag pembuka dari keseluruhan halaman web.
-                                    Semua kode html harus berada di dalam tag ini.</p>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Latihan 2</a>
                             </li>
-                            <li class="has-line-data" data-line-start="6" data-line-end="9">
-                                <p class="has-line-data" data-line-start="6" data-line-end="8"><strong>Tag
-                                        <code>&lt;head&gt;</code></strong><br>
-                                    Elemen pada tag <code>&lt;head&gt;</code> umumnya berisi berbagai definisi halaman
-                                    seperti kode <em>CSS, Javascript, tag meta, viewport</em> dan kode-kode lainnya yang
-                                    tidak tampil di browser.</p>
-                            </li>
-                            <li class="has-line-data" data-line-start="9" data-line-end="12">
-                                <p class="has-line-data" data-line-start="9" data-line-end="11"><strong>Tag
-                                        <code>&lt;body&gt;</code></strong><br>
-                                    Tag ini berisi semua elemen yang akan tampil di halaman web seperti paragraf, tabel,
-                                    link, gambar, list dan masih banyak lagi. Sebagian besar waktu dalam merancang atau
-                                    mendesain web akan dihabiskan di dalam tag <code>&lt;body&gt;</code> ini.</p>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">Latihan 3</a>
                             </li>
                         </ul>
-                        <blockquote>
-                            <p class="has-line-data" data-line-start="12" data-line-end="13">Tag html biasanya
-                                <strong>berpasangan</strong> seperti <code>&lt;h1&gt;</code> dan
-                                <code>&lt;/h1&gt;</code>. Tag pertama biasa disebut <strong>start tag</strong> dan
-                                tag setelehnya biasa disebut <strong>end tag</strong>. End tag ditulis sepeti start tag
-                                namun dengan tambahan <strong>forward slash</strong> atau <strong>’ / ’</strong> sebelum
-                                nama tag. Namun pada <strong>Void Elements</strong> hanya memiliki start tag. Setelah
-                                nama tag, ditambah <strong>forward slash</strong> seperti pada tag image
-                                (<code>&lt;img/&gt;</code>).</p>
-                        </blockquote>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="text-center">
+                                    <h3 class="mt-3">Latihan Format Teks pada Halaman Web</h3>
+                                    <h5>Soal:</h5>
+                                    <p>Lengkapi isian kosong, dengan dokumen HTML sederhana!</p>
+                                    <div class="card bg-dark text-white text-left">
+                                        <div class="card-body">
+                                            <p class="has-line-data" data-line-start="0" data-line-end="6">
+                                                <input type="text" id="doc" onchange="funDoc()" maxlength="15"
+                                                    size="13" />
+                                                <br>
+                                                &lt;html&gt;<br>
+                                                &lt;head&gt;<br>
+                                                <input type="text" id="title" onchange="funTitle()" maxlength="7"
+                                                    size="3" />Page Title&lt;/title&gt;<br>
+                                                &lt;/head&gt;<br>
+                                                <input type="text" id="body" onchange="funBody()" maxlength="6"
+                                                    size="4" /></p>
+                                            <p class="has-line-data" data-line-start="7" data-line-end="9">
+                                                &lt;/body&gt;<br>
+                                                <input type="text" id="html" onchange="funHtml()" maxlength="7"
+                                                    size="4" />
+                                                <br>
+                                            </p>
+                                            <small hidden class="text-success bg-white p-1" id="docFbs"></small>
+                                            <small hidden class="text-danger bg-white p-1" id="docFbd"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="text-center">
+                                    <h3 class="mt-3">Latihan Format Teks pada Halaman Web</h3>
+                                    <h5>Soal:</h5>
+                                    <p>Lengkapi isian kosong, dengan Tag komentar dan Tag heading paling penting!</p>
+                                    <div class="card bg-dark text-white text-left">
+                                        <div class="card-body">
+                                            <p class="has-line-data" data-line-start="0" data-line-end="8">&lt;!DOCTYPE
+                                                html&gt;<br>
+                                                &lt;html&gt;<br>
+                                                &lt;head&gt;<br>
+                                                &lt;title&gt;Page Title&lt;/title&gt;<br>
+                                                &lt;/head&gt;<br>
+                                                &lt;body&gt;<br>
+                                                <input type="text" id="kom1" onchange="funKom1()" maxlength="4"
+                                                    size="1" /> Isi dengan tag komentar <input type="text" id="kom2"
+                                                    onchange="funKom2()" maxlength="3" size="1" /><br>
+                                                <input type="text" id="h1" onchange="funH1()" maxlength="4"
+                                                    size="1" />Isi dengan heading paling penting/besar.<input
+                                                    type="text" id="h2" onchange="funH2()" maxlength="5" size="1" /></p>
+                                            <p class="has-line-data" data-line-start="9" data-line-end="11">
+                                                &lt;/body&gt;<br>
+                                                &lt;/html&gt;</p>
+                                            <small hidden class="text-success bg-white p-1" id="doc2Fbs"></small>
+                                            <small hidden class="text-danger bg-white p-1" id="doc2Fbd"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="text-center">
+                                    <h3 class="mt-3">Latihan Format Teks pada Halaman Web</h3>
+                                    <h5>Soal:</h5>
+                                    <p>Lengkapi isian kosong, dengan Tag komentar dan Tag heading paling penting!</p>
+                                    <div class="card bg-dark text-white text-left">
+                                        <div class="card-body">
+                                            <p class="has-line-data" data-line-start="0" data-line-end="8">&lt;!DOCTYPE
+                                                html&gt;<br>
+                                                &lt;html&gt;<br>
+                                                &lt;head&gt;<br>
+                                                &lt;title&gt;Page Title&lt;/title&gt;<br>
+                                                &lt;/head&gt;<br>
+                                                &lt;body&gt;<br>
+                                                &lt;!-- Isi dengan tag komentar --&gt;<br>
+                                                &lt;h1&gt;Isi dengan heading paling penting/besar.&lt;/h1&gt;</p>
+                                            <p class="has-line-data" data-line-start="9" data-line-end="10">&lt;a
+                                                <input type="text" id="href" onchange="funHref()" maxlength="5"
+                                                    size="2" />&quot;<a
+                                                    href="https://html-warrior.netlify.com">https://html-warrior.netlify.com</a>&quot;&gt;HTML
+                                                Warrior&lt;/a&gt;</p>
+                                            <p class="has-line-data" data-line-start="11" data-line-end="12">&lt;img
+                                                <input type="text" id="src" onchange="funSrc()" maxlength="4"
+                                                    size="1" />&quot;<a
+                                                    href="https://avatars0.githubusercontent.com/u/45032367?s=460&amp;v=4">https://avatars0.githubusercontent.com/u/45032367?s=460&amp;v=4</a>&quot;
+                                                <input type="text" id="alt" onchange="funAlt()" maxlength="4"
+                                                    size="1" />“Firman Abdul Jabar” width=“200” height=“230”&gt;</p>
+                                            <p class="has-line-data" data-line-start="13" data-line-end="15">
+                                                &lt;/body&gt;<br>
+                                                &lt;/html&gt;</p>
+                                            <small hidden class="text-success bg-white p-1" id="doc3Fbs"></small>
+                                            <small hidden class="text-danger bg-white p-1" id="doc3Fbd"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="prevNext my-2">
-                    <!-- <a href="./../1/" class="btn btn-outline-info disabled px-4">
+                    <a href="./../1/materi3.html" class="btn btn-outline-info px-4">
                         <span style="font-size: 1em;">
                             <i class="fas fa-arrow-left"></i>
                         </span>
                         PREV
-                        <span class="ml-1" style="font-size: 1em;">
-                            <i class="fas fa-lock"></i>
-                        </span>
-                    </a> -->
-                    <a href="./../1/materi2.html" class="btn btn-outline-info px-4 float-right">
+                    </a>
+                    <a href="./../../quizz/register.html?type=login" class="btn btn-outline-info px-4 float-right">
                         NEXT
                         <span style="font-size: 1em;">
                             <i class="fas fa-arrow-right"></i>
@@ -354,6 +423,7 @@
 
     <!-- SCRIPT -->
     <script src="./../../../assets/jquery.min.js"></script>
+    <script src="./js/latihan.js"></script>
     <script src="./../../../assets/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 </body>
 
