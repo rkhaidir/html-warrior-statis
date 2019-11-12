@@ -1,4 +1,4 @@
-const CACHE_NAME = 'firstpwa-v9';
+const CACHE_NAME = 'firstpwa-v1.1';
 var urlsToCache = [
 	'/',
 	'/index.html',
@@ -62,7 +62,11 @@ var urlsToCache = [
 	'/pages/quizz/quiz.html?',
 	'/pages/quizz/register.html',
 	'/pages/quizz/result.html',
-	'/pages/quizz/result.html?',
+	'/pages/quizz/result.html?choiceRadio=0',
+	'/pages/quizz/result.html?choiceRadio=1',
+	'/pages/quizz/result.html?choiceRadio=2',
+	'/pages/quizz/result.html?choiceRadio=3',
+	'/pages/quizz/result.html?choiceRadio=4',
 	'/pages/quizz/register.html?type=login',
 	'/pages/quizz/register.html?type=register',
 	'/pages/quizz/js/main.js',
