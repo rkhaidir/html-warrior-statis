@@ -1,18 +1,18 @@
 var playerMaster = JSON.parse(localStorage.getItem('playerMaster'));
 var nowUserEmail = localStorage.getItem("nowUserEmail");
-var position = findNowUserEmail(nowUserEmail); 
+var position = findNowUserEmail(nowUserEmail);
 
-var $ = function(id) {
+var $ = function (id) {
     return document.getElementById(id);
 }
 
 // user can choose quiz type and there are 2 type of quiz
-var mainListLang = function() {
-    localStorage.setItem("myQuizType", "countryQuiz");
+var mainListLang = function () {
+    localStorage.setItem("myQuizType", "evaluasi1");
     $("mainForm").submit();
 }
-var mainListGlobal = function() {
-    localStorage.setItem("myQuizType", "capitalQuiz");
+var mainListGlobal = function () {
+    localStorage.setItem("myQuizType", "evaluasi2");
     $("mainForm").submit();
 }
 
@@ -21,7 +21,7 @@ var mainListGlobal = function() {
 function findNowUserEmail(myEmailAddress) {
     var size = playerMaster["players"].length;
 
-    for ( i = 0; i < size; i++) {
+    for (i = 0; i < size; i++) {
         var NowuserEmail = playerMaster["players"][i]['myEmailAddress'];
         if (NowuserEmail == myEmailAddress) {
             return i;
@@ -32,26 +32,24 @@ function findNowUserEmail(myEmailAddress) {
 
 
 
-window.onload = function() {
+window.onload = function () {
     var position = findNowUserEmail(nowUserEmail);
     // Show current player name
     $("welcomeName").firstChild.nodeValue = playerMaster["players"][position]['myFirstName'];
     // act depend on what player choose
-    $("countryQuiz").onclick = mainListLang;
-    $("capitalQuiz").onclick = mainListGlobal;
+    $("evaluasi1").onclick = mainListLang;
+    $("evaluasi2").onclick = mainListGlobal;
 
     // button and control
     var goResultButton = document.getElementById('goResultButton');
     var logOutButton = document.getElementById('logOutButton');
 
-    goResultButton.onclick = function() {
+    goResultButton.onclick = function () {
         location.replace("result.html");
     }
 
-    logOutButton.onclick = function() {
+    logOutButton.onclick = function () {
         localStorage.setItem("nowUserEmail", "");
         location.replace("index.html");
     }
 }
-
-

@@ -3,10 +3,10 @@ var nowUserEmail = localStorage.getItem("nowUserEmail");
 var myQuizType = localStorage.getItem("myQuizType");
 
 // quiz Json
-if (myQuizType == "countryQuiz") {
+if (myQuizType == "evaluasi1") {
 
     var questions = [{
-        question: "Tag paling awal dari HTML adalah?",
+        question: "Tag untuk mendefinisikan html5 dan Tag paling awal dari HTML, adalah?",
         choices: ["Tag html", "Tag head", "DTD/Doctype", "Tag body", "Tag start"],
         correctAnswer: 2
     }, {
@@ -19,15 +19,15 @@ if (myQuizType == "countryQuiz") {
         correctAnswer: 4
     }, {
         question: "Tag heading manakah yang paling penting?",
-        choices: ["<head>", "<h6>", "<heading>", "<h1>", "<h100>"],
+        choices: ["&lt;head&gt;", "&lt;h6&gt;", "&lt;heading&gt;", "&lt;h1&gt;", "&lt;h100&gt;"],
         correctAnswer: 3
     }, {
         question: "Tag links mana yang benar untuk membuat hyperlink?",
-        choices: ["a href='https://google.com'", "a name='https://google.com'", "a link='https://google.com'", "a id='https://google.com'", "a url='https://google.com'"],
+        choices: ["&lt;a href= 'https://google.com'&gt;", "&lt;a name= 'https://google.com'&gt;", "&lt;a link= 'https://google.com'&gt;", "&lt;a id= 'https://google.com'&gt;", "&lt;a url= 'https://google.com'&gt;"],
         correctAnswer: 0
     }, {
         question: "Tag links mana yang benar untuk memasukan gambar?",
-        choices: ['img src="image.gif"', 'image src="image.gif"', 'img href="image.gif"', 'img alt="image.gif"', 'image href="image.gif"'],
+        choices: ['&lt;img src="image.gif"&gt;', '&lt;image src="image.gif"&gt;', '&lt;img href="image.gif"&gt;', '&lt;img alt="image.gif"&gt;', '&lt;image href="image.gif"&gt;'],
         correctAnswer: 0
     }, {
         question: "Tag komentar di awali dengan <!-- dan diakhiri dengan -->",
@@ -35,139 +35,47 @@ if (myQuizType == "countryQuiz") {
         correctAnswer: 1
     }, {
         question: "Tag html apa yang mendifinisikan title dari sebuah dokumen?",
-        choices: ["head", "meta", "title", "header", "nav"],
+        choices: ["&lt;head&gt;", "&lt;meta&gt;", "&lt;title&gt;", "&lt;header&gt;", "&lt;nav&gt;"],
         correctAnswer: 2
     }, {
-        question: "Which country is in Asia?",
-        choices: ["Czech Republic", "Finland", "Iran", "Monaco"],
-        correctAnswer: 2
-    }, {
-        question: "Which country is NOT in Asia?",
-        choices: ["Cambodia", "Israel", "Canada", "Jordan"],
-        correctAnswer: 2
-    }, {
-        question: "Which country is NOT in Asia?",
-        choices: ["Malaysia", "Belgium", "Nepal", "North Korea"],
-        correctAnswer: 1
-    }, {
-        question: "Which country is NOT in Asia?",
-        choices: ["Thailand", "Vietnam", "Japan", "Austria"],
+        question: "Jika gambar tidak bisa ditampilkan, atribut HTML mana yang spesifik untuk alternatif teks?",
+        choices: ["title", "href", "src", "alt", "teks"],
         correctAnswer: 3
     }, {
-        question: "Which country is NOT in Europe?",
-        choices: ["Vietnam", "Bulgaria", "Croatia", "Finland"],
+        question: "Tag ini umumnya berisi berbagai definisi halaman seperti kode CSS, Javascript, meta dan lainnya. Tag apakah ini?",
+        choices: ["&lt;script&gt;", "&lt;!DOCTYPE html&gt;", "&lt;body&gt;", "&lt;html&gt;", "&lt;head&gt;"],
+        correctAnswer: 4
+    }, {
+        question: "Pada Versi HTML1, hanya mampu menambahkan gambar sebanyak?",
+        choices: ["satu atau dua", "puluhan", "ratusan", "ribuan", "tak terhingga"],
         correctAnswer: 0
     }, {
-        question: "Which country is NOT in Europe?",
-        choices: ["France", "Greece", "Iceland", "United States"],
+        question: "Apakah HTML bahasa pemrograman?",
+        choices: ["Benar", "Salah", "Bisa Jadi", "Semua Benar", "Semua Salah"],
+        correctAnswer: 1
+    }, {
+        question: "Sampai saat ini (2019) versi html mana yang terbaru?",
+        choices: ["HTML3", "HTML4", "HTML5", "XHTML", "HTML v.Alpha"],
+        correctAnswer: 2
+    }, {
+        question: "Tag di HTML biasanya berpasangan, tag pertama biasa disebut?",
+        choices: ["door tag", "window tag", "one tag", "start tag", "end tag"],
         correctAnswer: 3
     }, {
-        question: "Which country is NOT in Europe?",
-        choices: ["Ethiopia", "Norway", "Poland", "Portugal"],
-        correctAnswer: 0
-    }, {
-        question: "Which country is NOT in North America?",
-        choices: ["Canada", "Belgium", "Greenland", "Mexico"],
-        correctAnswer: 1
-    }, {
-        question: "Which country is NOT in South America?",
-        choices: ["Korea", "Colombia", "Bolivia", "Chile"],
-        correctAnswer: 0
-    }, {
-        question: "Which country is in South America?",
-        choices: ["Peru", "Belgium", "Canada", "Russia"],
-        correctAnswer: 0
-    }, {
-        question: "Which country is in Europe?",
-        choices: ["Cuba ", "Italy", "Canada", "Mexico"],
-        correctAnswer: 1
-    }, {
-        question: "Which one is NOT country name?",
-        choices: ["Marc", "Belgium", "Canada", "Bolivia"],
-        correctAnswer: 0
-    }];
+        question: "Berikut 4 fitur terbaru dari HTML5, kecuali?",
+        choices: ["Video", "Audio", "Canvas", "Footer", "Fan"],
+        correctAnswer: 4
+    }, ];
 
 } else {
 
     var questions = [{
-        question: "Which city is the capital of Canada?",
-        choices: ["Toronto", "Ottawa", "Washington DC", "Areum"],
+        question: "404 NOT FOUND?",
+        choices: ["404 NOT FOUND", "404 NOT FOUND", "404 NOT FOUND", "404 NOT FOUND"],
         correctAnswer: 1
     }, {
-        question: "Which city is the capital of Brazil?",
-        choices: ["Brasília", "Toronto", "Andrea", "Lima"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Turkey?",
-        choices: ["Ankara", "Bratislava", "Lisbon", "Istanbul"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Switzerland?",
-        choices: ["Interaken", "Berlin", "Paris", "Bern"],
-        correctAnswer: 3
-    }, {
-        question: "Which city is the capital of South Korea?",
-        choices: ["Seoul", "Pyongyang", "Tokyo", "Manila"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Cuba?",
-        choices: ["Havana", "Guatemala", "Tegucigalpa", "Managua"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Bolivia?",
-        choices: ["Ethiopia", "Paramaribo", "Bolivia", "La Paz"],
-        correctAnswer: 3
-    }, {
-        question: "Which city is the capital of Zambia?",
-        choices: ["Harare", "Thimphu", "Lusaka", "Beijing"],
-        correctAnswer: 2
-    }, {
-        question: "Which city is the capital of China?",
-        choices: ["Thimphu", "Belgium", "Beijing", "Lusaka"],
-        correctAnswer: 2
-    }, {
-        question: "Which city is the capital of Russia?",
-        choices: ["Moscow", "Ankara", "Vienna", "Toronto"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Greece?",
-        choices: ["Vilnius", "Pape", "Rome", "Athens"],
-        correctAnswer: 3
-    }, {
-        question: "Which city is the capital of Germany?",
-        choices: ["Dublin", "Berlin", "Prague", "Brussels"],
-        correctAnswer: 1
-    }, {
-        question: "Which city is the capital of Monaco?",
-        choices: ["Moscow", "Stockholm", "Monaco", "London"],
-        correctAnswer: 2
-    }, {
-        question: "Which city is the capital of United Kingdom?",
-        choices: ["London", "Stockholm", "Berlin", "Prague"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Sweden?",
-        choices: ["Monaco", "Stockholm", "Vilnius", "Rome"],
-        correctAnswer: 1
-    }, {
-        question: "Which city is the capital of United States?",
-        choices: ["Washington AC", "Washington BC", "Washington CC", "Washington DC"],
-        correctAnswer: 3
-    }, {
-        question: "Which city is the capital of Iran?",
-        choices: ["Tehran", "Rome", "Astana", "Tokyo"],
-        correctAnswer: 0
-    }, {
-        question: "Which city is the capital of Philippines?",
-        choices: ["Prague", "Manila", "Stockholm", "London"],
-        correctAnswer: 1
-    }, {
-        question: "Which city is the capital of Vietnam?",
-        choices: ["Pho", "Hanoi", "Sofia", "Bern"],
-        correctAnswer: 1
-    }, {
-        question: "Which city is the capital of Chile?",
-        choices: ["Santiago", "Wine", "Georgetown", "Caracas"],
+        question: "404 NOT FOUND?",
+        choices: ["404 NOT FOUND", "404 NOT FOUND", "404 NOT FOUND", "404 NOT FOUND"],
         correctAnswer: 0
     }];
 
@@ -225,10 +133,10 @@ $(document).ready(function () {
 function showCurrentQuestion() {
 
     var myQuizType = localStorage.getItem("myQuizType");
-    if (myQuizType == "countryQuiz") {
-        document.getElementById("quizTitle").firstChild.nodeValue = "Country Quiz";
+    if (myQuizType == "evaluasi1") {
+        document.getElementById("quizTitle").firstChild.nodeValue = "Evaluasi 1";
     } else {
-        document.getElementById("quizTitle").firstChild.nodeValue = "Capital Quiz";
+        document.getElementById("quizTitle").firstChild.nodeValue = "Evaluasi 2";
     }
 
     var question = questions[currentQuestion].question;
