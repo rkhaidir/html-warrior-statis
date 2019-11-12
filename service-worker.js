@@ -62,6 +62,7 @@ var urlsToCache = [
 	'/pages/quizz/quiz.html?',
 	'/pages/quizz/register.html',
 	'/pages/quizz/result.html',
+	'/pages/quizz/result.html?',
 	'/pages/quizz/register.html?type=login',
 	'/pages/quizz/register.html?type=register',
 	'/pages/quizz/js/main.js',
